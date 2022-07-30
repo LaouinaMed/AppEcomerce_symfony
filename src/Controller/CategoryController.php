@@ -18,7 +18,7 @@ class CategoryController extends AbstractController
         //on va chercher la list  des produits de la categorie
 
         $products = $category->getProducts();
-
+        
         return $this->render('category/list.html.twig', compact('category',
         'products'));
     }
